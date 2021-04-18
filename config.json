@@ -1,0 +1,52 @@
+{
+    "user": {
+        "language": "en",
+        "USER_AGENT":""
+    },
+    "system": {
+        "en": {
+            "sentences": {
+                "startupText": "Today {day} {month} {year}",
+                "inputText": "Type {confirm} to confirm.\n",
+                "processText": "All the data fetching from {url}",
+                "confirm": "Yes"
+            },
+            "months": {
+                "_1": "January",
+                "_2": "February",
+                "_3": "March",
+                "_4": "April",
+                "_5": "May",
+                "_6": "June",
+                "_7": "July",
+                "_8": "August",
+                "_9": "September",
+                "_10": "October",
+                "_11": "November",
+                "_12": "December"
+            }
+        },
+        "tr": {
+            "sentences": {
+                "startupText": "Bugün {day} {month} {year}",
+                "inputText": "Onaylamak için {confirm} yazınız.\n",
+                "processText": "{url} Adresinden veriler çekiliyor",
+                "confirm": "Evet"
+            },
+            "months": {
+                "_1": "Ocak",
+                "_2": "Şubat",
+                "_3": "Mart",
+                "_4": "Nisan",
+                "_5": "Mayıs",
+                "_6": "Haziran",
+                "_7": "Temmuz",
+                "_8": "Ağustos",
+                "_9": "Eylül",
+                "_10": "Ekim",
+                "_11": "Kasım",
+                "_12": "Aralık"
+            }
+        }
+    }
+}
