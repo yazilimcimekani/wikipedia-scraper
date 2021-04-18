@@ -6,6 +6,10 @@ The app gets all "Today in History" datas from wikipedia.
 <img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Wikipedia-logo.png" alt="Wikipedia Logo"></img>
 </p>
 
+## Supported Languages
+- 1 🇬🇧 English (en)
+- 2 🇹🇷 Turkish (tr)
+
 ## Download
 
 ```bash
