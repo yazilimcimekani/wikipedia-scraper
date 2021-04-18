@@ -5,7 +5,6 @@
     },
     "system": {
         "en": {
-            "sep":"–",
             "sentences": {
                 "startupText": "Today {day} {month} {year}",
                 "inputText": "Type {confirm} to confirm.\n",
@@ -28,7 +27,6 @@
             }
         },
         "tr": {
-            "sep":"-",
             "sentences": {
                 "startupText": "Bugün {day} {month} {year}",
                 "inputText": "Onaylamak için {confirm} yazınız.\n",
