@@ -8,12 +8,13 @@ USER_AGENT = data["user"]["USER_AGENT"]
 systemLang = data["user"]["language"]
 sep = data["system"][systemLang]["sep"]
 if systemLang in data["system"]:
-    bugun = now.day
-    ay = data["system"][systemLang]["months"]["_" + str(now.month)]
+    today = now.day
+    this_month = data["system"][systemLang]["months"]["_" + str(now.month)]
+    this_year = now.year
     startupText = data["system"][systemLang]["sentences"]["startupText"].format(
-        day=bugun, month=ay, year=now.year
+        day=today, month=this_month, year=this_year
     )
-    url = f"https://{systemLang}.wikipedia.org/wiki/{bugun}_{ay}"
+    url = f"https://{systemLang}.wikipedia.org/wiki/{today}_{this_month}"
     inputText = data["system"][systemLang]["sentences"]["inputText"].format(
         confirm=data["system"][systemLang]["sentences"]["confirm"].lower()
     )
