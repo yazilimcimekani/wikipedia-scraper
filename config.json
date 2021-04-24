@@ -1,7 +1,8 @@
 {
     "user": {
         "language": "en",
-        "USER_AGENT":""
+        "USER_AGENT":"",
+        "file_dir":"../"
     },
     "system": {
         "en": {
@@ -10,7 +11,11 @@
                 "startupText": "Today {day} {month} {year}",
                 "inputText": "Type {confirm} to confirm.\n",
                 "processText": "All the data fetching from {url}",
-                "confirm": "Yes"
+                "confirm": "Yes",
+                "decline":"No",
+                "writing":"Do you want save the datas in a .txt file ? Type {confirm} to confirm.",
+                "dirError":"Invalid Directory!",
+                "end":"Process Ended!"
             },
             "months": {
                 "_1": "January",
@@ -33,7 +38,11 @@
                 "startupText": "Bugün {day} {month} {year}",
                 "inputText": "Onaylamak için {confirm} yazınız.\n",
                 "processText": "{url} Adresinden veriler çekiliyor",
-                "confirm": "Evet"
+                "confirm": "Evet",
+                "decline":"Hayır",
+                "writing":"Veriler .txt dosyasında saklansın mı? Onaylamak için {confirm} yazınız.",
+                "dirError":"Geçersiz dizin!",
+                "end":"İşlem Sonlandırıldı!"
             },
             "months": {
                 "_1": "Ocak",
