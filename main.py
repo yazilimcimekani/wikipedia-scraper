@@ -7,24 +7,21 @@ data = json.load(database)
 USER_AGENT = data["user"]["USER_AGENT"]
 systemLang = data["user"]["language"]
 dirPath = data["user"]["file_dir"]
-sep = data["system"][systemLang]["sep"]
+lang = data["system"][systemLang]
+sep = lang["sep"]
 if systemLang in data["system"]:
     today = now.day
-    this_month = data["system"][systemLang]["months"]["_" + str(now.month)]
+    this_month = lang["months"]["_" + str(now.month)]
     this_year = now.year
-    startupText = data["system"][systemLang]["sentences"]["startupText"].format(
-        day=today, month=this_month, year=this_year
-    )
-    confirmText = data["system"][systemLang]["sentences"]["confirm"].lower()
-    dirError = data["system"][systemLang]["sentences"]['dirError']
-    end = data["system"][systemLang]["sentences"]['end']
+    startupText = lang["sentences"]["startupText"].format(day=today, month=this_month, year=this_year)
+    confirmText = lang["sentences"]["confirm"].lower()
+    dirError = lang["sentences"]['dirError']
+    end = lang["sentences"]['end']
     url = f"https://{systemLang}.wikipedia.org/wiki/{today}_{this_month}"
-    inputText = data["system"][systemLang]["sentences"]["inputText"].format(
-        confirm=confirmText
-    )
+    inputText = lang["sentences"]["inputText"].format(confirm=confirmText)
     print(f"<<< {startupText} >>>")
-    processText = data["system"][systemLang]["sentences"]["processText"].format(url=url)
-    fileWritingText = data["system"][systemLang]["sentences"]["writing"]
+    processText = lang["sentences"]["processText"].format(url=url)
+    fileWritingText = lang["sentences"]["writing"]
     fileWriting = input(fileWritingText.format(confirm=confirmText))
     answer = input(inputText)
     if answer.lower() == confirmText:
@@ -35,11 +32,9 @@ if systemLang in data["system"]:
         if fileWriting.lower() == confirmText:
             if not path.isdir(dirPath):
                 print(dirError)
-                quit()
             else:
                 print(processText)
                 file = open(f"{dirPath}{today}_{this_month}.txt","w")
-                # file.write(f"{today} {this_month} ({systemLang})\n/* Is there a problem with the code? https://github.com/mertssmnoglu/wikipedia-scraper/issues */")
                 for job in all_Lists:
                     theindex = str(job.text).find(sep)
                     if(theindex != -1):
@@ -57,6 +52,5 @@ if systemLang in data["system"]:
     else:
         print(end)
         database.close()
-        quit()
 else:
     print(f"{systemLang} is not supported :/")
