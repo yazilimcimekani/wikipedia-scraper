@@ -19,7 +19,7 @@ First of all open the **config.json** file and enter your `User Agent` and `Lang
 🇬🇧 English (en), 🇹🇷 Turkish (tr)
 
 ### Saving Datas
-You can easily save the datas into a .txt file.
+You can easily save the datas into a txt file.
 
 ## Lisence
 
