@@ -15,7 +15,7 @@ git clone https://github.com/mertssmnoglu/wikipedia-scraper
 
 First of all open the **config.json** file and enter your `User Agent` and `Language`. Now all you need to do is confirm that scraping in the app.
 
-### Multiple Language Support(2)
+### Multiple Language Support (2)
 🇬🇧 English (en), 🇹🇷 Turkish (tr)
 
 ### Saving Datas
