@@ -21,6 +21,6 @@ First of all open the **config.json** file and enter your `User Agent` and `Lang
 ### Saving Datas
 You can easily save the datas into a txt file.
 
-## Lisence
+## License
 
-MIT Lisenced. Read `LISENCE` before use.
+MIT Licensed. Read `LICENSE` before use.
