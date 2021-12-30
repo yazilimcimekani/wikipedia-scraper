@@ -10,6 +10,8 @@ The app gets all "Today in History" datas from wikipedia.
 
 ```bash
 git clone https://github.com/mertssmnoglu/wikipedia-scraper
+cd wikipedia-scraper
+pip / pip3 install -r ./requirements.txt
 ```
 ## Usage
 
