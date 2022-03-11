@@ -2,7 +2,7 @@ import requests, json, datetime
 from bs4 import BeautifulSoup
 from os import path
 now = datetime.datetime.now()
-database = open("config.json")
+database = open("config.json",encoding='utf-8')
 data = json.load(database)
 USER_AGENT = data["user"]["USER_AGENT"]
 systemLang = data["user"]["language"]
@@ -34,7 +34,7 @@ if systemLang in data["system"]:
                 print(dirError)
             else:
                 print(processText)
-                file = open(f"{dirPath}{today}_{this_month}.txt","w")
+                file = open(f"{dirPath}{today}_{this_month}.txt","w",encoding='utf-8')
                 for job in all_Lists:
                     theindex = str(job.text).find(sep)
                     if(theindex != -1):
